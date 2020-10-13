@@ -1,0 +1,74 @@
+https://www.liaoxuefeng.com/wiki/896043488029600/1216289527823648
+ping OAmory.github.io
+
+www.oamory.ml
+
+cd public
+
+git init
+
+git remote add origin https://github.com/OAmory/OAmory.github.io
+
+git add -A
+
+git commit -m "阿巴阿爸"
+git push origin master
+git push -u origin master
+
+OAmory.github.io
+
+git remote add origin https://github.com/OAmory/OAmory.github.io
+
+git commit -m "阿巴阿爸"
+185.199.110.153
+
+git remote add origin git@github.com:OAmory/wrtg.git
+git clone git@github.com:OAmory/wrtg.git
+
+git pull --rebase origin 
+***********************************
+git checkout -b dev //分支指针
+
+git branch dev  //查看
+
+git checkout dev
+
+git branch
+git checkout master
+git merge dev             //合并
+git branch -d dev       // 删除
+git branch  //查看
+￥￥￥￥￥￥￥￥￥￥￥￥￥￥￥￥￥
+git switch -c dev   
+git switch master
+查看分支：git branch
+
+创建分支：git branch <name>
+
+切换分支：git checkout <name>或者git switch <name>
+
+创建+切换分支：git checkout -b <name>或者git switch -c <name>
+
+合并某分支到当前分支：git merge <name>
+git merge --no-ff -m "merge with no-ff" dev
+删除分支：git branch -d <name>
+
+git log --graph   命令可以看到分支合并图
+git log --graph --pretty=oneline --abbrev-commit
+******************************************
+git stash //命令保存现场
+git stash list //查看
+假定需要在master分支上修复，就从master创建临时分支git checkout master
+修复完成后，切换到master分支，并完成合并，最后删除issue-101分支：git switch master    git merge --no-ff -m "merged bug fix 101" issue-101
+一是用git stash apply恢复，但是恢复后，stash内容并不删除，你需要用git stash drop来删除；另一种方式是用git stash pop，恢复的同时把stash内容也删了
+cherry-pick  //命令，让我们能复制一个特定的提交到当前分支
+敲命令git tag <name>就可以打一个新标签
+git tag查看所有标签
+add merge这次提交打标签，它对应的commit id是f52c633，敲入命令：
+$ git tag v0.9 f52c633
+$ git tag -a v0.1 -m "version 0.1 released" 1094adb //带注释
+git show <tagname>可以看到说明文字 
+git tag -d v0.1 删除
+git push origin v1.0  //推送一个
+git push origin --tags //推送全部
+git push origin :refs/tags/v0.9  //推送过的删除
